@@ -1,2 +1,3 @@
 ALGORITHMS
 -> Dutch National Flag Algorithm
+-> Kadane's Algorithm
