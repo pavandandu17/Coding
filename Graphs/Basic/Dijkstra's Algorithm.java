@@ -9,6 +9,8 @@ int[] dijkstra(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj, int S)
     while(!pq.isEmpty())
     {
         Pair curr = pq.poll();
+        if(ans[curr.node] != curr.weight)
+            continue;
         for(ArrayList<Integer> neighbour:adj.get(curr.node))
         {
             int neighbourNode = neighbour.get(0);
